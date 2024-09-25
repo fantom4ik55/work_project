@@ -1,0 +1,14 @@
+@mixin centerflex() {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-items: center;
+  }
+  
+@mixin fontColor () {
+   font-family: "latoregular";
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 26px;
+   color: $pText;
+  } 

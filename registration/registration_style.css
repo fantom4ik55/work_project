@@ -1,0 +1,202 @@
+.breadcrumbs {
+  height: 148px;
+  background-color: rgb(248, 243, 244);
+}
+.breadcrumbs__title {
+  padding-top: 59px;
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.registration {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.registration__block__name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__block__name__title {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: rgb(34, 34, 34);
+}
+.registration__block__name__input {
+  color: rgb(177, 177, 177);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  width: 360px;
+  height: 45px;
+  border: 1px solid rgb(164, 164, 164);
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+.registration__block__name__input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.registration__block__radio {
+  margin-top: 31px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+}
+.registration__block__radio__gender {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  padding-top: 2px;
+}
+.registration__block__radio__one {
+  display: flex;
+  gap: 10px;
+}
+.registration__block__radio__one input[type=radio]:after {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 0px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #949393;
+}
+.registration__block__radio__one input[type=radio]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  position: relative;
+  background-color: #f16d7f;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+.registration__block__login {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__block__login_title {
+  color: rgb(177, 177, 177);
+  width: 359px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+}
+.registration__block__button {
+  position: relative;
+  box-sizing: border-box;
+  z-index: 5;
+  margin-top: 39px;
+  width: 167px;
+  height: 50px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid rgb(34, 34, 34);
+  cursor: pointer;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.registration__block__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: #f16d7f;
+  transition: all 1s ease;
+  z-index: -1;
+}
+.registration__block__button:hover:before {
+  width: 100%;
+}
+.registration__block__button:hover path {
+  fill: #fff;
+}
+.registration__block__button:hover {
+  color: #fff;
+  border: 1px solid #f16d7f;
+}
+.registration__block__button__svg {
+  padding-left: 20px;
+}
+.registration__loyalty__title {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 29px;
+}
+.registration__loyalty__paragraf {
+  width: 652px;
+  margin-top: 22px;
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 29px;
+}
+.registration__loyalty__discount {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  margin-top: 21px;
+}
+.registration__loyalty__discount__paragraf {
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 29px;
+}
+.registration__loyalty__box {
+  margin-top: 22px;
+}
+
+.radio_none {
+  display: none;
+}
+
+@media (768px <= width <= 1024px) {
+  html {
+    font-size: 10px;
+  }
+  .registration {
+    margin-top: 40px;
+  }
+  .registration__loyalty__paragraf {
+    width: 354px;
+    line-height: 19px;
+  }
+  .registration__loyalty__discount {
+    margin-top: 16px;
+    gap: 22px;
+  }
+  .radio_none {
+    display: flex;
+  }
+}/*# sourceMappingURL=registration_style.css.map */
